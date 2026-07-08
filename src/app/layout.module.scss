@@ -1,0 +1,67 @@
+@use '../../vendor/lgd-ui/styles/typescale' as typescale;
+
+.header {
+  padding: 8px;
+
+  color: var(--lgd-sys-color-plain-high);
+  background-color: var(--lgd-sys-color-tertiary);
+
+  display: flex;
+  justify-content: center;
+}
+
+.headerContainer {
+  max-width: var(--max-header-width);
+  width: 100%;
+
+  padding: 0px 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 32px;
+}
+
+.title {
+  @include typescale.title-medium;
+}
+
+.titleLabel {
+  @include typescale.label-large;
+  
+  color: var(--lgd-sys-color-plain-high);
+  background-color: var(--lgd-sys-color-tertiary);
+  
+  display: inline-block;
+  text-decoration: none;
+  
+  margin-bottom: 4px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer {
+  max-width: var(--max-content-width);
+  width: 100%;
+
+  padding: 0px 16px;
+}
+
+.footHr {
+  opacity: 0.5;
+  border: 1px solid var(--lgd-sys-color-plain-medium);
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.footer {
+  color: var(--lgd-sys-color-plain-medium);
+
+  text-align: center;
+
+  margin-bottom: 64px;
+}

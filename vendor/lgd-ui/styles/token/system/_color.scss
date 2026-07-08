@@ -1,0 +1,27 @@
+@mixin primary {
+  --lgd-sys-color-primary: var(--lgd-ref-color-brown-low);
+  --lgd-sys-color-primary-active: var(--lgd-ref-color-brown-high);
+}
+
+@mixin secondary {
+  --lgd-sys-color-secondary: var(--lgd-ref-color-orange-low);
+  --lgd-sys-color-secondary-active: var(--lgd-ref-color-orange-high);
+}
+
+@mixin tertiary {
+  --lgd-sys-color-tertiary: var(--lgd-ref-color-green-low);
+  --lgd-sys-color-tertiary-active: var(--lgd-ref-color-green-high);
+}
+
+@mixin plain {
+  --lgd-sys-color-plain-high: var(--lgd-ref-color-plain-high);
+  --lgd-sys-color-plain-medium: var(--lgd-ref-color-plain-medium);
+  --lgd-sys-color-plain-low: var(--lgd-ref-color-plain-low);
+}
+
+@mixin all {
+  @include primary;
+  @include secondary;
+  @include tertiary;
+  @include plain;
+}

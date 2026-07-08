@@ -1,0 +1,8 @@
+@mixin filled {
+  --lgd-comp-button-filled-text-size: var(--lgd-sys-text-size-label-large);
+  --lgd-comp-button-filled-text-line-height: var(--lgd-sys-text-line-height-label-large);
+}
+
+@mixin all {
+  @include filled;
+}

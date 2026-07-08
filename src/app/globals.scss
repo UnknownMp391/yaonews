@@ -1,0 +1,19 @@
+@use '../../vendor/lgd-ui/styles/token/main' as lgd-main;
+
+:root {
+  @include lgd-main.all;
+
+  --max-header-width: 1200px;
+  --max-content-width: 800px;
+}
+
+html {
+  body {
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'KN Maiyuan', sans-serif;
+
+    background-color: var(--lgd-ref-color-plain-high);
+  }
+}

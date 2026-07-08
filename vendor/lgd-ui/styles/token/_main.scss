@@ -1,0 +1,35 @@
+@use './reference/color' as ref-color;
+
+@use './system/color' as sys-color;
+@use './system/typescale' as sys-typescale;
+@use './system/size' as sys-size;
+
+@use './component/text/color' as comp-text-color;
+
+@use './component/button/color' as comp-button-color;
+@use './component/button/typescale' as comp-button-typescale;
+@use './component/button/size' as comp-button-size;
+
+@mixin reference {
+  @include ref-color.all;
+}
+
+@mixin system {
+  @include sys-color.all;
+  @include sys-typescale.all;
+  @include sys-size.all;
+}
+
+@mixin component {
+  @include comp-text-color.all;
+
+  @include comp-button-color.all;
+  @include comp-button-typescale.all;
+  @include comp-button-size.all;
+}
+
+@mixin all {
+  @include reference;
+  @include system;
+  @include component;
+}

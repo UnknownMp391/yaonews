@@ -1,0 +1,7 @@
+@mixin default {
+  --lgd-comp-text-color: var(--lgd-color-primary);
+}
+
+@mixin all {
+  @include default;
+}

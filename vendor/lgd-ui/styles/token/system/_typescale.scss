@@ -1,0 +1,35 @@
+@mixin title-large {
+  --lgd-sys-text-size-title-large: 48px;
+  --lgd-sys-text-line-height-title-large: 1.2;
+  --lgd-sys-text-font-weight-title-large: 400;
+}
+
+@mixin title-medium {
+  --lgd-sys-text-size-title-medium: 36px;
+  --lgd-sys-text-line-height-title-medium: 1.2;
+  --lgd-sys-text-font-weight-title-medium: 400;
+}
+
+@mixin title-small {
+  --lgd-sys-text-size-title-small: 24px;
+  --lgd-sys-text-line-height-title-small: 1.1;
+  --lgd-sys-text-font-weight-title-small: 400;
+}
+
+@mixin body {
+  --lgd-sys-text-size-body: 24px;
+  --lgd-sys-text-line-height-body: 1.6;
+}
+
+@mixin label-large {
+  --lgd-sys-text-size-label-large: 24px;
+  --lgd-sys-text-line-height-label-large: 1;
+}
+
+@mixin all {
+  @include title-large;
+  @include title-medium;
+  @include title-small;
+  @include body;
+  @include label-large;
+}

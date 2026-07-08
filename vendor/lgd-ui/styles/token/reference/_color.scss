@@ -1,0 +1,27 @@
+@mixin color-brown {
+  --lgd-ref-color-brown-high: #fff8e3;
+  --lgd-ref-color-brown-low: #7d6a3a;
+}
+
+@mixin color-orange {
+  --lgd-ref-color-orange-high: #fbf39b;
+  --lgd-ref-color-orange-low: #ffcf6f;
+}
+
+@mixin color-green {
+  --lgd-ref-color-green-high: #edfced;
+  --lgd-ref-color-green-low: #a6c494;
+}
+
+@mixin color-plain {
+  --lgd-ref-color-plain-high: #fafafa;
+  --lgd-ref-color-plain-medium: #aaafad;
+  --lgd-ref-color-plain-low: #000000;
+}
+
+@mixin all {
+  @include color-brown;
+  @include color-orange;
+  @include color-green;
+  @include color-plain;
+}

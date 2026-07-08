@@ -1,0 +1,22 @@
+@mixin title-large {
+  font-size: var(--lgd-sys-text-size-title-large);
+  line-height: var(--lgd-sys-text-line-height-title-large);
+  font-weight: var(--lgd-sys-text-font-weight-title-large);
+}
+
+@mixin title-medium {
+  font-size: var(--lgd-sys-text-size-title-medium);
+  line-height: var(--lgd-sys-text-line-height-title-medium);
+}
+
+@mixin title-small {
+  font-size: var(--lgd-sys-text-size-title-small);
+  line-height: var(--lgd-sys-text-line-height-title-small);
+  font-weight: var(--lgd-sys-text-font-weight-title-small);
+}
+
+
+@mixin label-large {
+  font-size: var(--lgd-sys-text-size-label-large);
+  line-height: var(--lgd-sys-text-line-height-label-large);
+}

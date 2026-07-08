@@ -1,0 +1,23 @@
+@mixin primary {
+  --lgd-comp-button-filled-primary-color: var(--lgd-sys-color-plain-high);
+  --lgd-comp-button-filled-primary-background-color: var(--lgd-sys-color-primary);
+  --lgd-comp-button-filled-primary-active-background-color: var(--lgd-sys-color-primary-active);
+}
+
+@mixin secondary {
+  --lgd-comp-button-filled-secondary-color: var(--lgd-sys-color-plain-high);
+  --lgd-comp-button-filled-secondary-background-color: var(--lgd-sys-color-secondary);
+  --lgd-comp-button-filled-secondary-active-background-color: var(--lgd-sys-color-secondary-active);
+}
+
+@mixin tertiary {
+  --lgd-comp-button-filled-tertiary-color: var(--lgd-sys-color-plain-high);
+  --lgd-comp-button-filled-tertiary-background-color: var(--lgd-sys-color-tertiary);
+  --lgd-comp-button-filled-tertiary-active-background-color: var(--lgd-sys-color-tertiary-active);
+}
+
+@mixin all {
+  @include primary;
+  @include secondary;
+  @include tertiary;
+}
