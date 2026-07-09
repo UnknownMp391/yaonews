@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 
 import "./globals.scss"
 import styles from './layout.module.scss'
-import Link from "next/link";
-import Head from "next/head";
+import Link from "next/link"
+import Head from "next/head"
 
 export const metadata: Metadata = {
   title: "妖灵日报",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="zh">
@@ -26,12 +26,15 @@ export default function RootLayout({
       <body>
         <header className={styles.header}>
           <div className={styles.headerContainer}>
-            <div className={styles.title}>妖灵日报</div>
+            <Link href="/"><div className={styles.title}>妖灵日报</div></Link>
             <Link href="/"><div className={styles.titleLabel}>
               日刊
             </div></Link>
             <Link href="/week-news"><div className={styles.titleLabel}>
               周刊
+            </div></Link>
+            <Link href="/me-post"><div className={styles.titleLabel}>
+              投稿
             </div></Link>
           </div>
         </header>

@@ -1,5 +1,10 @@
 @use '../../vendor/lgd-ui/styles/typescale' as typescale;
 
+@mixin no-link-style {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .header {
   padding: 8px;
 
@@ -24,6 +29,11 @@
 
 .title {
   @include typescale.title-medium;
+  @include no-link-style;
+
+  color: var(--lgd-sys-color-plain-high);
+
+  white-space: nowrap;
 }
 
 .titleLabel {
@@ -32,8 +42,7 @@
   color: var(--lgd-sys-color-plain-high);
   background-color: var(--lgd-sys-color-tertiary);
   
-  display: inline-block;
-  text-decoration: none;
+  @include no-link-style;
   
   margin-bottom: 4px;
 }

@@ -1,13 +1,13 @@
-import styles from './FilledButton.module.scss';
+import styles from './FilledButton.module.scss'
 
 export default function FilledButton({
   fullWidth = false,
   variant = 'primary',
   children,
 }: {
-  fullWidth?: boolean;
-  variant?: 'primary' | 'secondary' | 'tertiary';
-  children: React.ReactNode;
+  fullWidth?: boolean
+  variant?: 'primary' | 'secondary' | 'tertiary'
+  children: React.ReactNode
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   const variantCss = {
     primary: styles.primary,
@@ -18,5 +18,5 @@ export default function FilledButton({
     <button
       className={`${styles.button} ${fullWidth ? styles.fullWidth : ''} ${variantCss}`}
     >{children}</button>
-  );
+  )
 }

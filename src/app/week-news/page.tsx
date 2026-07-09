@@ -1,11 +1,11 @@
-import FilledButton from '@vendor/lgd-ui/components/button/FilledButton';
-import styles from './page.module.scss';
-import { createClient } from '@/utils/supabase/server';
-import { cookies } from 'next/headers';
+import FilledButton from '@vendor/lgd-ui/components/button/FilledButton'
+import styles from './page.module.scss'
+import { createClient } from '@/utils/supabase/server'
+import { cookies } from 'next/headers'
 
 import type { SupabaseClient } from '@supabase/supabase-js'
-import type { DateData } from '@/types/date';
-import { dateAdd, dateCopyWith, dateEqual, getCurrentDate, parseDateString } from '@/utils/date';
+import type { DateData } from '@/types/date'
+import { dateAdd, dateCopyWith, dateEqual, getCurrentDate, parseDateString } from '@/utils/date'
 
 async function queryLastNew(supabase: SupabaseClient): Promise<{
   success: true, found: true
@@ -97,5 +97,5 @@ export default async function WeekNew() {
         : FailurePart(result.reason)
       }
     </div>
-  );
+  )
 }

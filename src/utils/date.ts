@@ -1,4 +1,4 @@
-import { DateData } from "@/types/date";
+import { DateData } from "@/types/date"
 
 export function parseDateString(dateStr: string): DateData {
   const regex = /^(\d{4})-(\d{2})-(\d{2})$/

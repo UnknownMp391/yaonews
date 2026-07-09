@@ -1,11 +1,11 @@
-import FilledButton from '@vendor/lgd-ui/components/button/FilledButton';
-import styles from './page.module.scss';
-import { createClient } from '@/utils/supabase/server';
-import { cookies } from 'next/headers';
+import FilledButton from '@vendor/lgd-ui/components/button/FilledButton'
+import styles from './page.module.scss'
+import { createClient } from '@/utils/supabase/server'
+import { cookies } from 'next/headers'
 
 import type { SupabaseClient } from '@supabase/supabase-js'
-import type { DateData } from '@/types/date';
-import { dateAdd, dateCopyWith, dateEqual, getCurrentDate, parseDateString } from '@/utils/date';
+import type { DateData } from '@/types/date'
+import { dateAdd, dateCopyWith, dateEqual, getCurrentDate, parseDateString } from '@/utils/date'
 
 enum DayType {
   TODAY = 1,
@@ -50,8 +50,8 @@ async function queryLastNew(supabase: SupabaseClient): Promise<{
 }
 
 function SuccessPart(data: {
-    date: DateData;
-    image_id: string;
+    date: DateData
+    image_id: string
 }, supabase: SupabaseClient) {
   const current = getCurrentDate()
 
@@ -99,5 +99,5 @@ export default async function DayNew() {
         : FailurePart(result.reason)
       }
     </div>
-  );
+  )
 }
