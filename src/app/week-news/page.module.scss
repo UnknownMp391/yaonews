@@ -1,0 +1,29 @@
+@use '../../../vendor/lgd-ui/styles/typescale' as typescale;
+
+.title {
+  @include typescale.title-large;
+
+  color: var(--lgd-sys-color-primary);
+}
+
+.subtitle {
+  @include typescale.title-small;
+
+  color: var(--lgd-sys-color-primary);
+}
+
+.mainImage {
+  position: relative;
+  width: 100%;
+
+  margin-bottom: 64px;
+}
+
+.buttonBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.spacer {
+  flex: 1;
+}
