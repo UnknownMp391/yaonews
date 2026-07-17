@@ -5,3 +5,23 @@ allowBuilds:
 ignoredBuiltDependencies:
   - sharp
   - unrs-resolver
+minimumReleaseAgeExclude:
+  - '@sentry/browser-utils@10.66.0'
+  - '@sentry/browser@10.66.0'
+  - '@sentry/core@10.66.0'
+  - '@sentry/feedback@10.66.0'
+  - '@sentry/nextjs@10.66.0'
+  - '@sentry/node-core@10.66.0'
+  - '@sentry/node@10.66.0'
+  - '@sentry/opentelemetry@10.66.0'
+  - '@sentry/react@10.66.0'
+  - '@sentry/replay-canvas@10.66.0'
+  - '@sentry/replay@10.66.0'
+  - '@sentry/server-utils@10.66.0'
+  - '@sentry/vercel-edge@10.66.0'
+  - '@supabase/auth-js@2.110.7'
+  - '@supabase/functions-js@2.110.7'
+  - '@supabase/postgrest-js@2.110.7'
+  - '@supabase/realtime-js@2.110.7'
+  - '@supabase/storage-js@2.110.7'
+  - '@supabase/supabase-js@2.110.7'
