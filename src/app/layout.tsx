@@ -3,7 +3,8 @@ import type { Metadata } from "next"
 import "./globals.scss"
 import styles from './layout.module.scss'
 import Link from "next/link"
-import Head from "next/head"
+import Image from "next/image"
+import favicon from './favicon.ico'
 
 export const metadata: Metadata = {
   title: "妖灵日报",
@@ -26,7 +27,7 @@ export default function RootLayout({
       <body>
         <header className={styles.header}>
           <div className={styles.headerContainer}>
-            <Link href="/"><div className={styles.title}>妖灵日报</div></Link>
+            <Link href="/"><div className={styles.title}><Image className={styles.titleLogo} src={favicon} alt="Logo" height={32} />妖灵日报</div></Link>
             <Link href="/"><div className={styles.titleLabel}>
               日刊
             </div></Link>

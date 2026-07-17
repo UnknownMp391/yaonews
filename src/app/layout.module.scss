@@ -36,6 +36,10 @@
   white-space: nowrap;
 }
 
+.titleLogo {
+  margin-right: 8px;
+}
+
 .titleLabel {
   @include typescale.label-large;
   
@@ -50,6 +54,7 @@
 .main {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .mainContainer {
